@@ -1,0 +1,50 @@
+{
+  "name": "460e21fc-2b01-4949-b51d-aca8433fb701",
+  "displayName": "smm-cxas-scrapi-test-2",
+  "rootAgent": "credit_advisor_agent",
+  "modelSettings": {
+    "model": "gemini-3.1-flash-live"
+  },
+  "tools": [
+    "get_credit_offer",
+    "evaluate_negotiation",
+    "accept_credit_offer",
+    "log_declination_reason",
+    "set_session_state",
+    "end_session"
+  ],
+  "loggingSettings": {
+    "conversationLoggingSettings": {
+      "retentionWindow": "31536000s"
+    }
+  },
+  "timeZoneSettings": {
+    "timeZone": "America/Los_Angeles"
+  },
+  "variableDeclarations": [
+    {
+      "name": "customer_id",
+      "description": "Customer identifier provided by banking platform",
+      "schema": {
+        "type": "STRING",
+        "default": ""
+      }
+    },
+    {
+      "name": "offer_id",
+      "description": "Credit offer identifier provided by banking platform",
+      "schema": {
+        "type": "STRING",
+        "default": ""
+      }
+    },
+    {
+      "name": "decision_status",
+      "description": "Tracks customer offer decision status: ACCEPTED, DECLINED, NEGOTIATING",
+      "schema": {
+        "type": "STRING",
+        "default": ""
+      }
+    }
+  ]
+}

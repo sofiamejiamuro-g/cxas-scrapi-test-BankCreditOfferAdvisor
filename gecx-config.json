@@ -1,0 +1,9 @@
+{
+  "gcp_project_id": "smm-cxas-scrapi-test-2",
+  "location": "us",
+  "app_name": "smm-cxas-scrapi-test-2",
+  "deployed_app_id": "460e21fc-2b01-4949-b51d-aca8433fb701",
+  "app_dir": "cxas_app/smm-cxas-scrapi-test-2",
+  "model": "gemini-3.1-flash-live",
+  "modality": "text"
+}

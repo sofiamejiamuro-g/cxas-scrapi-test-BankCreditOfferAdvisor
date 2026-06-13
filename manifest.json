@@ -1,0 +1,65 @@
+{
+  "status": "complete",
+  "summary": "Wrote 14 files for 1 agents, 5 tools, 1 callbacks.",
+  "files_written": [
+    {
+      "path": "app.json",
+      "type": "app_config"
+    },
+    {
+      "path": "agents/credit_advisor_agent/credit_advisor_agent.json",
+      "type": "agent_config"
+    },
+    {
+      "path": "agents/credit_advisor_agent/instruction.txt",
+      "type": "instruction"
+    },
+    {
+      "path": "agents/credit_advisor_agent/before_agent_callbacks/before_agent/python_code.py",
+      "type": "callback"
+    },
+    {
+      "path": "tools/get_credit_offer/get_credit_offer.json",
+      "type": "tool_config"
+    },
+    {
+      "path": "tools/get_credit_offer/python_function/python_code.py",
+      "type": "python_code"
+    },
+    {
+      "path": "tools/evaluate_negotiation/evaluate_negotiation.json",
+      "type": "tool_config"
+    },
+    {
+      "path": "tools/evaluate_negotiation/python_function/python_code.py",
+      "type": "python_code"
+    },
+    {
+      "path": "tools/accept_credit_offer/accept_credit_offer.json",
+      "type": "tool_config"
+    },
+    {
+      "path": "tools/accept_credit_offer/python_function/python_code.py",
+      "type": "python_code"
+    },
+    {
+      "path": "tools/log_declination_reason/log_declination_reason.json",
+      "type": "tool_config"
+    },
+    {
+      "path": "tools/log_declination_reason/python_function/python_code.py",
+      "type": "python_code"
+    },
+    {
+      "path": "tools/set_session_state/set_session_state.json",
+      "type": "tool_config"
+    },
+    {
+      "path": "tools/set_session_state/python_function/python_code.py",
+      "type": "python_code"
+    }
+  ],
+  "files_skipped": [],
+  "unresolved": [],
+  "next_step_recommendation": "Dispatch lint-fixer to clean up generated code."
+}

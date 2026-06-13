@@ -1,0 +1,18 @@
+{
+  "status": "clean",
+  "iterations": 1,
+  "fixes_applied": [
+    {
+      "rule": "A005",
+      "file": "app.json",
+      "summary": "Added end_session system tool to root agent tools array"
+    },
+    {
+      "rule": "I014",
+      "file": "agents/credit_advisor_agent/instruction.txt",
+      "summary": "Added $current_date reference to instruction constraints"
+    }
+  ],
+  "unresolved": [],
+  "final_lint_output": "All checks passed.\nLint PASSED (no errors)."
+}

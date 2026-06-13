@@ -1,0 +1,58 @@
+[
+  {
+    "name": "negotiate_amount_and_term_sim",
+    "run": 1,
+    "passed": false,
+    "goals": "0/1",
+    "expectations": "0/0",
+    "turns": 2,
+    "duration_s": 2.5,
+    "session_id": "8a3da07b-b43a-4761-8884-30863d7668b2",
+    "session_parameters": {
+      "customer_id": "CUST-88192",
+      "offer_id": "OFFER-202"
+    },
+    "transcript": "User: event: welcome\nAgent: Hello. I have some good news! You have a pre-approved credit offer of $25,000 with an interest rate of 6.5% and a monthly payment of $592.00, all over a period of 48 months. Would you like to accept this offer, discuss some adjustments, or do you wish to decline? Hello. I have some good news! You have a pre-approved credit offer of $25,000 with an interest rate of 6.5% and a monthly payment of $592.00, all over a period of 48 months. Would you like to accept this offer, discuss some adjustments, or do you wish to decline?\nUser: ",
+    "detailed_trace": [
+      "User: event: welcome",
+      "Agent Text: Hello. I have some good news! You have a pre-approved credit offer of $25,000 with an interest rate of 6.5% and a monthly payment of $592.00, all over a period of 48 months. Would you like to accept this offer, discuss some adjustments, or do you wish to decline?\nUser Query: <event>session start</event>\nTool Call: get_credit_offer with args {'customer_id': 'CUST-88192', 'offer_id': 'OFFER-202'}\nTool Response: get_credit_offer with result {'result': {'offer': {'monthly_payment': '$592.00', 'amount': '$25,000', 'negotiable': True, 'customer_id': 'CUST-88192', 'offer_id': 'OFFER-202', 'term_length': '48 months', 'interest_rate': '6.5%'}, 'status': 'success'}}\nAgent Text (Diag): Hello. I have some good news! You have a pre-approved credit offer of $25,000 with an interest rate of 6.5% and a monthly payment of $592.00, all over a period of 48 months. Would you like to accept this offer, discuss some adjustments, or do you wish to decline?"
+    ],
+    "step_details": [
+      {
+        "goal": "Customer wants to negotiate their credit offer loan amount to $25,000 and term to 48 months.",
+        "success_criteria": "Being transferred to the Underwriting Negotiation Specialist and receiving an eligible evaluation counts as a successful outcome.",
+        "status": "Not Started",
+        "justification": ""
+      }
+    ],
+    "expectation_details": []
+  },
+  {
+    "name": "closing_document_and_signature_sim",
+    "run": 1,
+    "passed": false,
+    "goals": "0/1",
+    "expectations": "0/0",
+    "turns": 2,
+    "duration_s": 2.6,
+    "session_id": "b14fb5c6-a22f-4bdd-91b2-d4f0c7bc2a4b",
+    "session_parameters": {
+      "customer_id": "CUST-88192",
+      "offer_id": "OFFER-101"
+    },
+    "transcript": "User: event: welcome\nAgent: Hello! I'm happy to help you review your credit offer.\n\nBased on your details, we can offer you a loan of $10,000 with an interest rate of 8.5% and a term length of 36 months. This would make your monthly payment $315.00.\n\nWould you like to accept this offer, discuss potential adjustments, or do you wish to decline? Hello! I'm happy to help you review your credit offer.\n\nBased on your details, we can offer you a loan of $10,000 with an interest rate of 8.5% and a term length of 36 months. This would make your monthly payment $315.00.\n\nWould you like to accept this offer, discuss potential adjustments, or do you wish to decline?\nUser: ",
+    "detailed_trace": [
+      "User: event: welcome",
+      "Agent Text: Hello! I'm happy to help you review your credit offer.\n\nBased on your details, we can offer you a loan of $10,000 with an interest rate of 8.5% and a term length of 36 months. This would make your monthly payment $315.00.\n\nWould you like to accept this offer, discuss potential adjustments, or do you wish to decline?\nUser Query: <event>session start</event>\nTool Call: get_credit_offer with args {'customer_id': 'CUST-88192', 'offer_id': 'OFFER-101'}\nTool Response: get_credit_offer with result {'result': {'offer': {'monthly_payment': '$315.00', 'amount': '$10,000', 'negotiable': False, 'customer_id': 'CUST-88192', 'offer_id': 'OFFER-101', 'term_length': '36 months', 'interest_rate': '8.5%'}, 'status': 'success'}}\nAgent Text (Diag): Hello! I'm happy to help you review your credit offer.\n\nBased on your details, we can offer you a loan of $10,000 with an interest rate of 8.5% and a term length of 36 months. This would make your monthly payment $315.00.\n\nWould you like to accept this offer, discuss potential adjustments, or do you wish to decline?"
+    ],
+    "step_details": [
+      {
+        "goal": "Customer accepts the credit offer and completes document submission and signature scheduling.",
+        "success_criteria": "Being transferred to the Closing Specialist, uploading documents, and scheduling a signature appointment counts as success.",
+        "status": "Not Started",
+        "justification": ""
+      }
+    ],
+    "expectation_details": []
+  }
+]

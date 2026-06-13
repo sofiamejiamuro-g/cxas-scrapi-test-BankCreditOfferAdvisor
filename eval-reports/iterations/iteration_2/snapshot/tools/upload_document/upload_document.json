@@ -1,0 +1,10 @@
+{
+  "name": "upload_document",
+  "displayName": "upload_document",
+  "pythonFunction": {
+    "name": "upload_document",
+    "pythonCode": "tools/upload_document/python_function/python_code.py",
+    "description": "Uploads verification documentation (such as identification or income proof) required for loan closing."
+  },
+  "executionType": "SYNCHRONOUS"
+}

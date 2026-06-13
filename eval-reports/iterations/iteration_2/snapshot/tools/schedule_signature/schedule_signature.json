@@ -1,0 +1,10 @@
+{
+  "name": "schedule_signature",
+  "displayName": "schedule_signature",
+  "pythonFunction": {
+    "name": "schedule_signature",
+    "pythonCode": "tools/schedule_signature/python_function/python_code.py",
+    "description": "Schedules an in-person appointment at bank offices for final offer signing."
+  },
+  "executionType": "SYNCHRONOUS"
+}

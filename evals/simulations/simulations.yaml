@@ -1,0 +1,23 @@
+- name: negotiate_amount_and_term_sim
+  tags: [P0, HIGH, negotiate]
+  steps:
+    - goal: "Customer wants to negotiate their credit offer loan amount to $25,000 and term to 48 months."
+      success_criteria: "Being transferred to the Underwriting Negotiation Specialist and receiving an eligible evaluation counts as a successful outcome."
+      response_guide: "Ask to adjust your offer to $25,000 for 48 months."
+      max_turns: 12
+  expectations:
+    - "The agent must transfer to negotiation_agent."
+    - "The agent must evaluate the requested loan amount and repayment term."
+  session_parameters: {customer_id: "CUST-88192", offer_id: "OFFER-202"}
+
+- name: closing_document_and_signature_sim
+  tags: [P0, HIGH, closing]
+  steps:
+    - goal: "Customer accepts the credit offer and completes document submission and signature scheduling."
+      success_criteria: "Being transferred to the Closing Specialist, uploading documents, and scheduling a signature appointment counts as success."
+      response_guide: "Accept the credit offer, submit proof of income, and schedule signature for June 20."
+      max_turns: 12
+  expectations:
+    - "The agent must transfer to closing_agent."
+    - "The agent must call upload_document and schedule_signature."
+  session_parameters: {customer_id: "CUST-88192", offer_id: "OFFER-101"}

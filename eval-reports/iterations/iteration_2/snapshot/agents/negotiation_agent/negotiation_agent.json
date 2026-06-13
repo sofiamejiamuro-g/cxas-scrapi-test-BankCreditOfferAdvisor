@@ -1,0 +1,11 @@
+{
+  "name": "negotiation_agent",
+  "displayName": "negotiation_agent",
+  "instruction": "agents/negotiation_agent/instruction.txt",
+  "tools": [
+    "evaluate_negotiation",
+    "set_session_state",
+    "end_session"
+  ],
+  "childAgents": []
+}

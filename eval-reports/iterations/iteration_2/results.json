@@ -1,0 +1,44 @@
+{
+  "total": 1,
+  "passed": 0,
+  "sim_pass_rate": null,
+  "run_short": "7f060637",
+  "time_str": "2026-06-13 05:01:35",
+  "failures": {
+    "TOOL_MISSING": [
+      [
+        "review_offer_golden",
+        "expected get_credit_offer, not found. Called: [get_credit_offer]"
+      ]
+    ]
+  },
+  "per_eval": {
+    "review_offer_golden": {
+      "pass": 0,
+      "total": 1,
+      "failures": [
+        [
+          "TOOL_MISSING",
+          "expected get_credit_offer, not found. Called: [get_credit_offer]"
+        ]
+      ]
+    }
+  },
+  "per_eval_by_type": {
+    "golden": {
+      "review_offer_golden": {
+        "pass": 0,
+        "total": 1,
+        "failures": [
+          [
+            "TOOL_MISSING",
+            "expected get_credit_offer, not found. Called: [get_credit_offer]"
+          ]
+        ]
+      }
+    },
+    "sim": {},
+    "tool_test": {},
+    "callback_test": {}
+  }
+}

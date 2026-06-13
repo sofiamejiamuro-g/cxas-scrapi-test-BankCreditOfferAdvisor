@@ -1,0 +1,10 @@
+{
+  "name": "accept_credit_offer",
+  "displayName": "accept_credit_offer",
+  "pythonFunction": {
+    "name": "accept_credit_offer",
+    "pythonCode": "tools/accept_credit_offer/python_function/python_code.py",
+    "description": "Confirms customer acceptance of a credit offer and triggers bank disbursement."
+  },
+  "executionType": "SYNCHRONOUS"
+}

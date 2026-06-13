@@ -1,0 +1,10 @@
+{
+  "name": "log_declination_reason",
+  "displayName": "log_declination_reason",
+  "pythonFunction": {
+    "name": "log_declination_reason",
+    "pythonCode": "tools/log_declination_reason/python_function/python_code.py",
+    "description": "Records customer decision to decline a credit offer along with their primary reason for declining."
+  },
+  "executionType": "SYNCHRONOUS"
+}

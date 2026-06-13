@@ -1,0 +1,10 @@
+{
+  "name": "get_credit_offer",
+  "displayName": "get_credit_offer",
+  "pythonFunction": {
+    "name": "get_credit_offer",
+    "pythonCode": "tools/get_credit_offer/python_function/python_code.py",
+    "description": "Retrieves active credit offer terms (loan amount, interest rate, term length, monthly payment) for a given offer ID and customer ID."
+  },
+  "executionType": "SYNCHRONOUS"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "closing_agent",
+  "displayName": "closing_agent",
+  "instruction": "agents/closing_agent/instruction.txt",
+  "tools": [
+    "upload_document",
+    "schedule_signature",
+    "end_session"
+  ],
+  "childAgents": []
+}

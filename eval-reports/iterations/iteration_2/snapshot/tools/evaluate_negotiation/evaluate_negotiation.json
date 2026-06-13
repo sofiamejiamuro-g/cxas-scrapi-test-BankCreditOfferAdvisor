@@ -1,0 +1,10 @@
+{
+  "name": "evaluate_negotiation",
+  "displayName": "evaluate_negotiation",
+  "pythonFunction": {
+    "name": "evaluate_negotiation",
+    "pythonCode": "tools/evaluate_negotiation/python_function/python_code.py",
+    "description": "Checks if requested adjustments (such as lower interest rate or higher loan amount) are pre-approved or eligible for a given credit offer."
+  },
+  "executionType": "SYNCHRONOUS"
+}

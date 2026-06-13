@@ -1,0 +1,22 @@
+common_session_parameters:
+  customer_id: "CUST-88192"
+  offer_id: "OFFER-101"
+
+conversations:
+  - conversation: review_offer_golden
+    session_parameters:
+      customer_id: "CUST-88192"
+      offer_id: "OFFER-101"
+    turns:
+      - user: "<event>welcome</event>"
+        agent: "Hello! I am your Bank Credit Offer Advisor. How can I help you today?"
+      - user: "I want to review my credit offer"
+        agent: "Here are your active credit offer terms: Offer amount $10,000.00 at 12.5% interest for 36 months with a monthly payment of $334.50."
+        tool_calls:
+          - action: get_credit_offer
+            args:
+              customer_id: "CUST-88192"
+              offer_id: "OFFER-101"
+    expectations:
+      - "The agent must retrieve and clearly explain the credit offer terms."
+    tags: [P0, NO-GO, review]

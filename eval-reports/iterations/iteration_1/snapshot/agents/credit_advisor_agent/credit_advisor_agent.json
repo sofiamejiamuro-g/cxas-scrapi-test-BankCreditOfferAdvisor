@@ -1,0 +1,21 @@
+{
+  "name": "credit_advisor_agent",
+  "displayName": "credit_advisor_agent",
+  "instruction": "agents/credit_advisor_agent/instruction.txt",
+  "tools": [
+    "get_credit_offer",
+    "accept_credit_offer",
+    "log_declination_reason",
+    "set_session_state",
+    "end_session"
+  ],
+  "childAgents": [
+    "closing_agent",
+    "negotiation_agent"
+  ],
+  "beforeAgentCallbacks": [
+    {
+      "pythonCode": "agents/credit_advisor_agent/before_agent_callbacks/before_agent/python_code.py"
+    }
+  ]
+}

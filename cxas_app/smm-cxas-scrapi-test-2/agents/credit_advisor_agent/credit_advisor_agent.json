@@ -4,14 +4,14 @@
   "instruction": "agents/credit_advisor_agent/instruction.txt",
   "tools": [
     "get_credit_offer",
-    "evaluate_negotiation",
     "accept_credit_offer",
     "log_declination_reason",
     "set_session_state",
     "end_session"
   ],
   "childAgents": [
-    "closing_agent"
+    "closing_agent",
+    "negotiation_agent"
   ],
   "beforeAgentCallbacks": [
     {

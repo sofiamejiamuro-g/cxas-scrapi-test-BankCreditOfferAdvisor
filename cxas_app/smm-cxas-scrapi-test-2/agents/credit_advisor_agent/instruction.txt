@@ -51,11 +51,11 @@
 
     <subtask name="Negotiation_And_Adjustment">
         <step name="Evaluate_Negotiation_Request">
-            <trigger>Customer requests adjustments (e.g., lower interest rate, higher loan amount, or longer term).</trigger>
+            <trigger>Customer requests adjustments (e.g., lower interest rate, higher loan amount, or longer repayment term).</trigger>
             <action>
-                1. Call {@TOOL: set_session_state} to mark milestone or negotiation state.
-                2. Call {@TOOL: evaluate_negotiation} with requested adjustment details (e.g., requested_rate, requested_amount, offer_id={offer_id}).
-                3. Present the evaluation result or adjusted eligible offer terms to the customer clearly.
+                1. Call {@TOOL: set_session_state} to mark negotiation state.
+                2. Say "Let me connect you with our Underwriting Negotiation Specialist to evaluate your requested amount and term length."
+                3. Transfer to {@AGENT: negotiation_agent}.
             </action>
         </step>
     </subtask>

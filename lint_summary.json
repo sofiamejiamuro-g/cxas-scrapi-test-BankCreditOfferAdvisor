@@ -3,14 +3,9 @@
   "iterations": 1,
   "fixes_applied": [
     {
-      "rule": "A005",
-      "file": "app.json",
-      "summary": "Added end_session system tool to root agent tools array"
-    },
-    {
-      "rule": "I014",
-      "file": "agents/credit_advisor_agent/instruction.txt",
-      "summary": "Added $current_date reference to instruction constraints"
+      "rule": "I012",
+      "file": "agents/credit_advisor_agent/credit_advisor_agent.json",
+      "summary": "Removed unused evaluate_negotiation tool reference from root agent tools inventory"
     }
   ],
   "unresolved": [],

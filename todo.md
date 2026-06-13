@@ -1,7 +1,7 @@
-# Build & Edit Checklist: Closing & Onboarding Sub-Agent
+# Build & Edit Checklist: Negotiation Sub-Agent (`negotiation_agent`)
 
 - [x] 1. Update TDD + user approval (Gate 2)
-- [x] 2. Implement sub-agent (closing_agent) & new tools (upload_document, schedule_signature)
+- [x] 2. Implement sub-agent (negotiation_agent)
 - [x] 3. Update routing & childAgents in credit_advisor_agent
-- [ ] 4. Lint clean (Gate 4)
+- [x] 4. Lint clean (Gate 4)
 - [x] 5. Push + verify (Gate 6)

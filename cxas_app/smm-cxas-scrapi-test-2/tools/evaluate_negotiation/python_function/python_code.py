@@ -18,7 +18,7 @@ evaluate_negotiation — Negotiation Evaluation Tool
 
 
 def evaluate_negotiation(
-    offer_id: str = "", requested_rate: str = "", requested_amount: str = ""
+    offer_id: str = "", requested_rate: str = "", requested_amount: str = "", requested_term: str = ""
 ) -> dict:
     """Evaluate if requested credit offer adjustments are eligible.
 
@@ -26,6 +26,7 @@ def evaluate_negotiation(
         offer_id: The credit offer ID.
         requested_rate: Requested interest rate (e.g., '6.0%').
         requested_amount: Requested loan amount (e.g., '$30,000').
+        requested_term: Requested repayment term length (e.g., '48 months').
 
     Returns:
         dict: Evaluation result indicating approval eligibility and updated terms.
@@ -37,26 +38,15 @@ def evaluate_negotiation(
             "agent_action": "Ask the customer to clarify which offer they are negotiating.",
         }
 
-    if offer_id == "OFFER-202":
-        return {
-            "status": "success",
-            "eligible": True,
-            "adjusted_offer": {
-                "offer_id": offer_id,
-                "amount": requested_amount or "$25,000",
-                "interest_rate": requested_rate or "6.0%",
-                "term_length": "48 months",
-                "monthly_payment": "$578.00",
-            },
-            "note": "Adjustment pre-approved based on premium credit profile.",
-        }
-
     return {
         "status": "success",
-        "eligible": False,
-        "reason": (
-            "Standard promotional offers do not support rate or amount"
-            " modifications."
-        ),
-        "agent_action": "Inform the customer that the standard terms are fixed.",
+        "eligible": True,
+        "adjusted_offer": {
+            "offer_id": offer_id,
+            "amount": requested_amount or "$25,000",
+            "interest_rate": requested_rate or "6.0%",
+            "term_length": requested_term or "48 months",
+            "monthly_payment": "$578.00",
+        },
+        "note": "Adjustment pre-approved based on credit profile.",
     }

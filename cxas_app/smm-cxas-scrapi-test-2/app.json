@@ -1,6 +1,6 @@
 {
   "name": "460e21fc-2b01-4949-b51d-aca8433fb701",
-  "displayName": "smm-cxas-scrapi-test-2",
+  "displayName": "BankCreditOfferAdvisor",
   "rootAgent": "credit_advisor_agent",
   "modelSettings": {
     "model": "gemini-3.1-flash-live"

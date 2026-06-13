@@ -2,6 +2,9 @@
 
 Welcome to the **Bank Credit Offer Advisor**, a state-of-the-art conversational AI agent built on the Google Customer Engagement Suite (GECX) platform. This advisor empowers bank customers to explore, negotiate, accept, or decline pre-approved credit offers in a seamless chat experience.
 
+> [!NOTE]
+> **Practice Agent**: This repository serves as a practice implementation for agent creation and evaluation workflows using **CXAS-scrapi**.
+
 ---
 
 ## 🌟 Key Customer Journeys

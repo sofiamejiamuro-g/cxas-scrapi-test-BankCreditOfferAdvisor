@@ -10,7 +10,9 @@
     "set_session_state",
     "end_session"
   ],
-  "childAgents": [],
+  "childAgents": [
+    "closing_agent"
+  ],
   "beforeAgentCallbacks": [
     {
       "pythonCode": "agents/credit_advisor_agent/before_agent_callbacks/before_agent/python_code.py"

@@ -64,9 +64,9 @@
         <step name="Offer_Acceptance">
             <trigger>Customer explicitly agrees to or accepts the credit offer.</trigger>
             <action>
-                1. Call {@TOOL: accept_credit_offer} using offer_id={offer_id} and customer_id={customer_id} to confirm acceptance and trigger bank disbursement.
+                1. Call {@TOOL: accept_credit_offer} using offer_id={offer_id} and customer_id={customer_id} to confirm acceptance.
                 2. Call {@TOOL: set_session_state} to mark decision status as ACCEPTED.
-                3. Congratulate the customer and outline the next disbursement steps.
+                3. Congratulate the customer, say "Let me connect you with our Closing Specialist to upload your verification documents and schedule your signing date", and transfer to {@AGENT: closing_agent}.
             </action>
         </step>
 

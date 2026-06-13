@@ -1,8 +1,7 @@
-# Build & Edit Checklist
+# Build & Edit Checklist: Closing & Onboarding Sub-Agent
 
-- [x] 1. Gather requirements (gate 1)
-- [x] 2. TDD + user approval (gate 2)
-- [x] 3. Scaffold app (gate 3)
-- [x] 4. Lint clean (gate 4)
-- [ ] 5. Generate evals — one eval-writer dispatch per type (gate 5)
-- [x] 6. Push + verify (gate 6)
+- [x] 1. Update TDD + user approval (Gate 2)
+- [x] 2. Implement sub-agent (closing_agent) & new tools (upload_document, schedule_signature)
+- [x] 3. Update routing & childAgents in credit_advisor_agent
+- [ ] 4. Lint clean (Gate 4)
+- [x] 5. Push + verify (Gate 6)

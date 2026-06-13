@@ -11,6 +11,8 @@
     "accept_credit_offer",
     "log_declination_reason",
     "set_session_state",
+    "upload_document",
+    "schedule_signature",
     "end_session"
   ],
   "loggingSettings": {
